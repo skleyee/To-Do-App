@@ -32,6 +32,6 @@ class LoginController extends Controller
             return redirect('/');
         }
 
-        return redirect('login')->withErrors(['login' => $validator->errors()->first()]);
+        return redirect('login')->withErrors(['login' => 'Invalid credentials']);
     }
 }
